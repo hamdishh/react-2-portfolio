@@ -1,63 +1,29 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Discover from './pages/Discover';
+import About from './pages/About';
+import Search from './pages/Search';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Wrapper from './components/Wrapper';
 
-function NavTabs() {
+function App() {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Home
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="about"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          About
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="blog"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Blog
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="contact"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Contact
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="contact/learn"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Learn
-        </NavLink>
-      </li>
-    </ul>
+    <Router>
+      <div>
+        <Navbar />
+        <Wrapper>
+          <Routes>
+            <Route path="/" element={<About/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/discover" element={<Discover/>} />
+            <Route path="/search" element={<Search/>} />
+          </Routes>
+        </Wrapper>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
-export default NavTabs;
+export default App;
