@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import API from '../utils/API';
-import Card from '../components/Card';
-import Alert from '../components/Alert';
+
+// import Card from '../components/Card';
+// import Alert from '../components/Alert';
 
 function Discover() {
   const [state, setState] = useState({
@@ -11,17 +11,17 @@ function Discover() {
     showDog: false,
   });
 
-  const loadNextDog = () => {
-    API.getRandomDog()
-      .then((res) => {
-        setState((prevState) => ({
-          ...prevState,
-          image: res.data.message,
-          showDog: true,
-        }));
-      })
-      .catch((err) => console.log(err));
-  };
+  // const loadNextDog = () => {
+  //   API.getRandomDog()
+  //     .then((res) => {
+  //       setState((prevState) => ({
+  //         ...prevState,
+  //         image: res.data.message,
+  //         showDog: true,
+  //       }));
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
 
   const handleBtnClick = (event) => {
     const btnType = event.target.getAttribute('data-value');

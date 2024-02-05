@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import API from '../utils/API';
-import Container from '../components/Container';
-import SearchForm from '../components/SearchForm';
-import SearchResults from '../components/SearchResults';
-import Alert from '../components/Alert';
+// import API from '../utils/API';
+// import Container from '../components/Container';
+// import SearchForm from '../components/SearchForm';
+// import SearchResults from '../components/SearchResults';
+// import Alert from '../components/Alert';
 
 function Search() {
   const [searchData, setSearchData] = useState({
@@ -20,32 +20,32 @@ function Search() {
       search: event.target.value,
     }));
 
-    // Suggest possible dogs when the user begins to type
-    API.getBaseBreedsList()
-      .then((res) =>
-        setSearchData((prevSearchData) => ({
-          ...prevSearchData,
-          breeds: res.data.message,
-        }))
-      )
-      .catch((err) => console.log(err));
+  //   // Suggest possible dogs when the user begins to type
+  //   API.getBaseBreedsList()
+  //     .then((res) =>
+  //       setSearchData((prevSearchData) => ({
+  //         ...prevSearchData,
+  //         breeds: res.data.message,
+  //       }))
+  //     )
+  //     .catch((err) => console.log(err));
   };
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    API.getDogsOfBreed(searchData.search)
-      .then((res) => {
-        if (res.data.status === 'error') {
-          throw new Error(res.data.message);
-        }
-        setSearchData({ ...searchData, results: res.data.message, error: '' });
-      })
-      .catch((err) => setSearchData({ ...searchData, error: err.message }));
-  };
+  // const handleFormSubmit = (event) => {
+  //   event.preventDefault();
+  //   API.getDogsOfBreed(searchData.search)
+  //     .then((res) => {
+  //       if (res.data.status === 'error') {
+  //         throw new Error(res.data.message);
+  //       }
+  //       setSearchData({ ...searchData, results: res.data.message, error: '' });
+  //     })
+  //     .catch((err) => setSearchData({ ...searchData, error: err.message }));
+  // };
 
   return (
     <div>
-      <Container style={{ minHeight: '80%' }}>
+      {/* <Container style={{ minHeight: '80%' }}>
         <h1 className="text-center">Search By Breed!</h1>
         <Alert
           type="danger"
@@ -60,7 +60,7 @@ function Search() {
           breeds={searchData.breeds}
         />
         <SearchResults results={searchData.results} />
-      </Container>
+      </Container> */}
     </div>
   );
 }

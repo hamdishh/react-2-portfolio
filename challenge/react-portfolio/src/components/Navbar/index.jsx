@@ -1,67 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
-import './style.css';
+import "./style.css";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
-function Navbar() {
+function NavbarEl() {
   return (
-    <Router>
-      <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
-              Pupster
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <NavLink
-                    to="/"
-                    end
-                    className={({ isActive }) =>
-                      isActive ? 'nav-link active' : 'nav-link'
-                    }
-                  >
-                    About
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    to="/discover"
-                    className={({ isActive }) =>
-                      isActive ? 'nav-link active' : 'nav-link'
-                    }
-                  >
-                    Discover
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    to="/search"
-                    className={({ isActive }) =>
-                      isActive ? 'nav-link active' : 'nav-link'
-                    }
-                  >
-                    Search
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </Router>
+    <Navbar expand="lg" className="newNav">
+      <Container>
+        <Navbar.Brand href="www.google.com">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavbarEl;

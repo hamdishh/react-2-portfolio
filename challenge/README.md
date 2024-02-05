@@ -21,8 +21,8 @@ Remember, "good" design is subjective. Your site should look "polished" and "pro
 ### Base Requirements
 
 * Technologies that must be used:
-  * [ ] React
-  * [ ] Navigation with `React Router`, dynamic rendering, or another third part router
+  * [x] React
+  * [x] Navigation with `React Router`, dynamic rendering, or another third part router
 * Your portfolio **must contain** the following information:
   * [ ] Your name
   * [ ] Links to your:
