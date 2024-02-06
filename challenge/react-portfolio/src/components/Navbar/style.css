@@ -1,11 +1,33 @@
-*{
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+
+
+
+
+/* nav.navbar.navbar-default {
+    margin-bottom: 0;
+  } */
+
+  /* .newNav { */
+    /* margin-bottom: 0; */
+  /* } */
+  
+  /* Add the following styles to make the navbar take the entire width of the screen */
+  .newNav {
+    width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  }
+  .newNav .container,
+.newNav .container-fluid,
+.newNav .container-lg,
+.newNav .container-md,
+.newNav .container-sm,
+.newNav .container-xl,
+.newNav .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-
-nav.navbar.navbar-default {
-    margin-bottom: 0;
-  }
+  
