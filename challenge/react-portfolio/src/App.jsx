@@ -4,6 +4,7 @@ import About from "./components/pages/About";
 // import Search from './components/pages/Search';
 import NavbarEl from "./components/Navbar";
 // import Footer from './components/Footer';
+import FooterEl from "./components/Footer";
 
 function App() {
   return (
