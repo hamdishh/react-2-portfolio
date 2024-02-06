@@ -5,6 +5,8 @@ import About from "./components/pages/About";
 import NavbarEl from "./components/Navbar";
 // import Footer from './components/Footer';
 import FooterEl from "./components/Footer";
+//import Home from '.components/Home/Home
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
         <NavbarEl />
 
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<RouteHandler />} />
+           {/* Define separate routes for Home and About */}
           <Route path="/about" element={<About />} />
           {/* <Route path="/portfolio" element={<Discover/>} />
             <Route path="/contact" element={<Search/>} /> */}
@@ -24,5 +27,17 @@ function App() {
     </Router>
   );
 }
-
 export default App;
+
+// Create a separate component for routing
+const RouteHandler = () => {
+  const location = useLocation();
+  
+  // Render the Home component only if the current path is the root path ("/")
+  if (location.pathname === '/') {
+    return <Home />;
+  } else {
+    return null;
+  }
+};
+
