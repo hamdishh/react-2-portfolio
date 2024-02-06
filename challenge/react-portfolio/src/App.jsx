@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useLocation } from 'react-router';
 // import Discover from './components/pages/Discover';
 import About from "./components/pages/About";
 // import Search from './components/pages/Search';
@@ -15,9 +17,9 @@ function App() {
         <NavbarEl />
 
         <Routes>
-          <Route path="/" element={<RouteHandler />} />
+        <Route path="/about" element={<About />} />
            {/* Define separate routes for Home and About */}
-          <Route path="/about" element={<About />} />
+           <Route path="/" element={<Home />} />
           {/* <Route path="/portfolio" element={<Discover/>} />
             <Route path="/contact" element={<Search/>} /> */}
         </Routes>

@@ -1,6 +1,6 @@
 import "./style.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
-
+import { LinkContainer } from 'react-router-bootstrap';
 function NavbarEl() {
   return (
     <Navbar expand="lg" className="newNav" style={{ width: '100%', position: 'fixed', top: 0, zIndex: 1000 }}>
