@@ -17,9 +17,10 @@ function App() {
         <NavbarEl />
 
         <Routes>
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<About />} />
            {/* Define separate routes for Home and About */}
-           <Route path="/" element={<Home />} />
+           <Route path="/home" element={<Home />} />
+           <Route path="/about" element={<About />} />
           {/* <Route path="/portfolio" element={<Discover/>} />
             <Route path="/contact" element={<Search/>} /> */}
         </Routes>
