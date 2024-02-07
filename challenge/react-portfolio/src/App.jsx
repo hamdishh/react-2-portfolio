@@ -26,6 +26,7 @@ function App() {
         </Routes>
 
         {/* <Footer /> */}
+        <FooterEl/> 
       </div>
     </Router>
   );
