@@ -59,9 +59,9 @@ button:focus-visible {
   width: 100vw;
 }
 
-#home-container {
+.home-container {
   flex: auto;
-  margin-top: 75px;
+  margin: 75px 75px 0 75px;
 }
 #root {
   display: flex;
@@ -70,7 +70,9 @@ button:focus-visible {
 }
 
 .about-container {
+  flex: auto;
   margin-top: 80px;
+
 }
 
 .project-card {
