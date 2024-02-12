@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+// import React from "react";
+import { Container } from "react-bootstrap";
 
 function FooterEl() {
   return (
-    <footer className="bg-green text-light py-3">
+    <footer className="bg-green py-3">
       <Container className="text-center">
-        <p>© 2024 Your Company</p>
+      <p>© 2024 Your Company</p>
       </Container>
     </footer>
   );

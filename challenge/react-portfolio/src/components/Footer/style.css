@@ -1,5 +1,6 @@
-.bg-green {
+footer.bg-green.text-light.py-3 {
   background-color: green;
+  width: 100%;
 }
 
 .text-light {
