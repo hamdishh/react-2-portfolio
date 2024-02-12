@@ -1,0 +1,32 @@
+/* Card.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: #fff;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .card a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  

@@ -4,26 +4,23 @@ import { useLocation } from 'react-router';
 // import Discover from './components/pages/Discover';
 import About from "./components/pages/About";
 // import Search from './components/pages/Search';
-import NavbarEl from "./components/Navbar";
+ import NavbarEl from "./components/Navbar";
 // import Footer from './components/Footer';
 import FooterEl from "./components/Footer";
 //import Home from '.components/Home/Home
-import Home from './components/Home/Home';
+import Home from './components/pages/Home/Home';
 
 function App() {
   return (
     <Router>
-      <div>
-        <NavbarEl />
+        <NavbarEl/>
 
         <Routes>
-        <Route path="/" element={<About />} />
-           
+          <Route path="/" element={<About className="about-container" />} />
            <Route path="/home" element={<Home />} />
            <Route path="/about" element={<About />} />
         </Routes>
         <FooterEl/> 
-      </div>
     </Router>
   );
 }
