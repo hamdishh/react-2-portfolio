@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={<About className="about-container" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        
       </Routes>
       <FooterEl />
     </Router>

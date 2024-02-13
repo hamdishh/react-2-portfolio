@@ -7,10 +7,6 @@ import { Container, Row, Col } from "react-bootstrap";
 function About() {
   return (
     <div className="about-container">
-      {/* <div backgroundImage="https://i.imgur.com/qkdpN.jpg">
-        <h1>Pupster</h1>
-        <h2>They're the Good Boys and Girls</h2>
-      </div> */}
       <Container>
         <Row>
           <Col size="md-12">
