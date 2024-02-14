@@ -75,6 +75,15 @@ button:focus-visible {
 
 }
 
+.contact-container {
+  flex: auto;
+  margin: 75px 75px 0 75px
+}
+
+.form-control {
+  width: 55%;
+}
+
 .project-card {
   margin: 10px;
 }

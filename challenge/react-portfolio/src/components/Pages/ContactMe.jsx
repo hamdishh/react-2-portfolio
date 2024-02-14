@@ -4,20 +4,30 @@ import { FloatingLabel, Form } from 'react-bootstrap'; // Import FloatingLabel a
 
 const Contact = () => {
     return (
-        <>
+        <div className="contact-container">
             <FloatingLabel
-                controlId="floatingInput"
+                controlId="floatingNameInput"
+                label="Your Name"
+                className="mb-3"
+            >
+                <Form.Control type="text" placeholder="Your Name" />
+            </FloatingLabel>
+
+            <FloatingLabel
+                controlId="floatingEmailInput"
                 label="Email address"
                 className="mb-3"
             >
                 <Form.Control type="email" placeholder="name@example.com" />
             </FloatingLabel>
+
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Comments</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Leave a comment here" />
+                <Form.Label>Message</Form.Label>
+                <Form.Control as="textarea" rows={3} placeholder="Leave a message here" />
             </Form.Group>
-        </>
+        </div>
     );
 }
 
 export default Contact;
+
