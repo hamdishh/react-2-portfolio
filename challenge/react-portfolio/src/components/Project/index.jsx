@@ -12,6 +12,7 @@ Card.defaultProps = {
 
 function Project({ project }) {
   return (
+    <div className="project-container">
     <Card className= "project-card">
 
       <CardBody >
@@ -21,6 +22,7 @@ function Project({ project }) {
         <CardLink href={project.demo}>Demo</CardLink>
       </CardBody>   
     </Card>
+    </div>
   );
 }
 

@@ -84,8 +84,18 @@ button:focus-visible {
   width: 55%;
 }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .project-card {
+  /* margin: 10px; */
   margin: 10px;
+  width: 300px;
+  align-items: center;
+  text-align: center;
 }
 
 @media (prefers-color-scheme: light) {

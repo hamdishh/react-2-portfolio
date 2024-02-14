@@ -11,6 +11,8 @@ const Home = () => {
       <p>
         Welcome to my portfolio showcasing my projects and skills as a developer
       </p>
+      <div className="project-container"> {/* Parent container for projects */}
+
       <Project
         project={{
           name: "README Generator",
@@ -35,6 +37,7 @@ const Home = () => {
           demo: "",
         }}
       />
+    </div>
     </div>
   );
 };
