@@ -23,7 +23,7 @@ const Home = () => {
       />
       <Project
         project={{
-          name: "README Generator",
+          name: "Password Generator",
           description: "",
           github: "",
           demo: "",
@@ -31,13 +31,43 @@ const Home = () => {
       />
       <Project
         project={{
-          name: "README Generator",
+          name: "Team Profile Generator",
           description: "",
           github: "",
           demo: "",
         }}
       />
     </div>
+    
+    <div className="project-container"> {/* Parent container for projects */}
+
+      <Project
+        project={{
+          name: "Horiseon Refractor",
+          description: "",
+          github: "",
+          demo: "",
+        }}
+      />
+      <Project
+        project={{
+          name: "WE-ARE-MANY",
+          description: "",
+          github: "",
+          demo: "",
+        }}
+      />
+      <Project
+        project={{
+          name: "Console Finances",
+          description: "",
+          github: "",
+          demo: "",
+        }}
+      />
+    </div>
+
+    
     </div>
   );
 };
