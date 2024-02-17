@@ -7,7 +7,8 @@ Card.defaultProps = {
     description: 'ReadMe generator using node.js',
     github: 'https://github.com/hamdishh/README-gengen',
     demo: '',
-  }
+  },
+  
 }
 
 function Project({ project }) {

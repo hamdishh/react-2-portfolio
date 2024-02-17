@@ -25,15 +25,15 @@ const Home = () => {
         project={{
           name: "Password Generator",
           description: "",
-          github: "",
-          demo: "",
+          github: "https://github.com/hamdishh/Password-Generator",
+          demo: "https://hamdishh.github.io/Password-Generator/",
         }}
       />
       <Project
         project={{
           name: "Team Profile Generator",
           description: "",
-          github: "",
+          github: "https://github.com/hamdishh/meet-the-team",
           demo: "",
         }}
       />
@@ -45,24 +45,24 @@ const Home = () => {
         project={{
           name: "Horiseon Refractor",
           description: "",
-          github: "",
-          demo: "",
+          github: "https://github.com/hamdishh/refrac-horeoson",
+          demo: "https://hamdishh.github.io/refrac-horeoson/",
         }}
       />
       <Project
         project={{
           name: "WE-ARE-MANY",
           description: "",
-          github: "",
-          demo: "",
+          github: "https://github.com/CestSamual/We-Are-Many",
+          demo: "https://cestsamual.github.io/We-Are-Many/",
         }}
       />
       <Project
         project={{
           name: "Console Finances",
           description: "",
-          github: "",
-          demo: "",
+          github: "https://github.com/hamdishh/Console-Finances",
+          demo: "https://hamdishh.github.io/Console-Finances/",
         }}
       />
     </div>
