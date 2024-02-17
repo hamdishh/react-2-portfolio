@@ -78,11 +78,33 @@ button:focus-visible {
 .contact-container {
   flex: auto;
   margin: 75px 75px 0 75px
+
+}
+.contact-container {
+  padding-top: 110px; 
+  border: 10px solid red;
 }
 
 .form-control {
   width: 55%;
+  border: 1px solid blue;
+  
 }
+
+.contact-container .form-control {
+  border-radius: 0; 
+}
+
+/* Adjusting form width */
+.contact-container .form-control,
+.contact-container .form-label {
+    width: 44%; 
+}
+
+.contact-container #floatingNameInput .form-control {
+  width: 22%;
+}
+
 
 .project-container {
   display: flex;
