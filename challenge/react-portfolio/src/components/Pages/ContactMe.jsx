@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarEl from "../../components/Navbar";
-import { FloatingLabel, Form } from "react-bootstrap"; // Import FloatingLabel and Form components from react-bootstrap
+import { FloatingLabel, Form, Button } from "react-bootstrap"; // Import FloatingLabel and Form components from react-bootstrap
 
 const Contact = () => {
   return (
@@ -29,13 +29,23 @@ const Contact = () => {
           placeholder="Leave a message here"
         />
       </Form.Group>
+{/* Button for GitHub */}
+<div className="btn-box-con">
+<Button variant="primary" href="https://github.com" className="me-3 mb-2">
+ GitHub
+</Button>
 
+ {/* Button for LinkedIn */}
+<Button variant="primary" href="https://linkedin.com" className="me-3 mb-2">
+ LinkedIn
+</Button>
 
-
-
-
-      
-    </div>
+{/* Button for CV */}
+<Button variant="primary" href="/path-to-cv" target="_blank" className="me-3 mb-2">
+    CV
+    </Button>
+ </div>
+ </div>
   );
 };
 
