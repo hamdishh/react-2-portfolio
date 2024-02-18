@@ -137,10 +137,13 @@ button:focus-visible {
 
 .project-card {
   /* margin: 10px; */
+  height: 260px;
   margin: 10px;
   width: 300px;
   align-items: center;
   text-align: center;
+  margin-top: 41px;
+  border-radius: 8px;
 }
 
 @media (prefers-color-scheme: light) {
