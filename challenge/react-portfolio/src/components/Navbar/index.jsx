@@ -10,7 +10,7 @@ function NavbarEl() {
       style={{ width: "100%", position: "fixed", top: 0, zIndex: 1000 }}
     >
       <Container>
-        <Navbar.Brand href="www.google.com">My React Portfolio</Navbar.Brand>
+        <Navbar.Brand href="www.google.com">Hamdi Sheikhabdullahi</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
