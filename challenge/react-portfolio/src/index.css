@@ -55,7 +55,7 @@ button:focus-visible {
 }
 
 .newNav , .bg-green {
-  background-color: green;
+  background-color: #987C8A;
   width: 100vw;
 }
 
@@ -148,4 +148,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+footer.bg-green.text-light.py-3 {
+  background-color: #DFC1D0;
+  width: 100%;
 }
