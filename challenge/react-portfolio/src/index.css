@@ -96,7 +96,7 @@ button:focus-visible {
 
 .form-control {
   width: 55%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   
 }
 
@@ -124,6 +124,92 @@ button:focus-visible {
       
 }
 
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.form-container {
+  grid-column: span 1; /* Occupy 1 column */
+}
+
+
+/* .button-container {
+  display: grid;
+  grid-row: 1 / span 3; /* Span 3 rows */
+/* } */ 
+
+.button {
+  margin-bottom: 13px; 
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    grid-row: auto; /* Reset grid row */
+  }
+}
+
+.button-1 {
+  width: 150px; /* Adjust button width as needed */
+  background-color: #DFC1D0; /* Set the background color */
+  border: solid#DFC1D0;
+}
+
+.button-2 {
+  width: 150px;
+  background-color: #C4A0B2;
+  border: #C4A0B2;
+}
+
+.button-3 {
+  width: 150px;
+  background-color:#011B2B;
+  border:#011B2B;
+}
+
+.button-1, .button-2, .button-3 {
+  width: 150px;
+  margin-left: 828px;
+  /* margin-top: -288px; */
+  margin-bottom: 100px;
+border-radius: 7px;
+}
+
+
+
+
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+   margin-top: -99px; 
+  position: relative; /* Ensure the container has a position other than static */
+  top: -150px;
+ margin-bottom: 10px;
+  
+  /* padding-left: 777px;
+  padding-bottom: 5px; */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-basis: 100%; /* Take up full width */
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 20px;
+  }
+  .button-container {
+    flex-basis: 100%; /* Take up full width */
+    margin-top: 20px;
+  }
+}
+
+
+
+
 .me-3 {
   width: 200px;
 }
@@ -133,6 +219,7 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .project-card {
@@ -144,7 +231,25 @@ button:focus-visible {
   text-align: center;
   margin-top: 41px;
   border-radius: 8px;
+  
 }
+
+.project-card. {
+  background-color: #011B2B;
+}
+
+
+
+
+.card-text {
+  text-align: center;
+  margin-top: 63px;
+}
+
+
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {

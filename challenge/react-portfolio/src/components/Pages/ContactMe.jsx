@@ -5,6 +5,8 @@ import { FloatingLabel, Form, Button } from "react-bootstrap"; // Import Floatin
 const Contact = () => {
   return (
     <div className="contact-container">
+      <div className="form-and-buttons">
+      <div className="form-container">
       <FloatingLabel
         controlId="floatingNameInput"
         label="Your Name"
@@ -29,23 +31,42 @@ const Contact = () => {
           placeholder="Leave a message here"
         />
       </Form.Group>
-{/* Button for GitHub */}
-<div className="btn-box-con">
-<Button variant="primary" href="https://github.com" className="me-3 mb-2">
- GitHub
-</Button>
+      </div>
 
- {/* Button for LinkedIn */}
-<Button variant="primary" href="https://linkedin.com" className="me-3 mb-2">
- LinkedIn
-</Button>
+      <div className="button-container">
+        <Button
+          variant="primary"
+          size="lg"
+          className="button-1"
+          href="https://github.com"
+        >
+          GitHub
+        </Button>
+      </div>
 
-{/* Button for CV */}
-<Button variant="primary" href="/path-to-cv" target="_blank" className="me-3 mb-2">
-    CV
-    </Button>
- </div>
- </div>
+      <div className="button-container">
+        <Button
+          variant="primary"
+          size="lg"
+          className="button-2"
+          href="/path-to-cv"
+        >
+          CV
+        </Button>
+      </div>
+
+      <div className="button-container">
+        <Button
+          variant="primary"
+          size="lg"
+          className="button-3"
+          href="https://linkedin.com"
+        >
+          LinkedIn
+        </Button>
+      </div>
+    </div>
+    </div>
   );
 };
 

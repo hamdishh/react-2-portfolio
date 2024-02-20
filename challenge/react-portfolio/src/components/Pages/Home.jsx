@@ -11,63 +11,68 @@ const Home = () => {
       {/* <p>
         Welcome to my portfolio showcasing my projects and skills as a developer
       </p> */}
-      <div className="project-container"> {/* Parent container for projects */}
+      <div className="project-container">
+        
+        {/* {" "} */}
+        {/* Parent container for projects */}
+        <Project
+         
+          project={{
+            name: "README Generator", //dark blue color
+            description: "ReadMe file template generated using the command line and node.js",
+            github: "",
+            demo: "",
+          }}
+          className="readme-generator"
+        
+        />
+        <Project
+          project={{
+            name: "Password Generator",
+            description: "",
+            github: "https://github.com/hamdishh/Password-Generator",
+            demo: "https://hamdishh.github.io/Password-Generator/",
+          }}
+        />
+        <Project
+          project={{
+            name: "Team Profile Generator",
+            description: "",
+            github: "https://github.com/hamdishh/meet-the-team",
+            demo: "",
+          }}
+        />
+      </div>
 
-      <Project
-        project={{
-          name: "README Generator",
-          description: "",
-          github: "",
-          demo: "",
-        }}
-      />
-      <Project
-        project={{
-          name: "Password Generator",
-          description: "",
-          github: "https://github.com/hamdishh/Password-Generator",
-          demo: "https://hamdishh.github.io/Password-Generator/",
-        }}
-      />
-      <Project
-        project={{
-          name: "Team Profile Generator",
-          description: "",
-          github: "https://github.com/hamdishh/meet-the-team",
-          demo: "",
-        }}
-      />
-    </div>
-    
-    <div className="project-container"> {/* Parent container for projects */}
-
-      <Project
-        project={{
-          name: "Horiseon Refractor",
-          description: "",
-          github: "https://github.com/hamdishh/refrac-horeoson",
-          demo: "https://hamdishh.github.io/refrac-horeoson/",
-        }}
-      />
-      <Project
-        project={{
-          name: "WE-ARE-MANY",
-          description: "",
-          github: "https://github.com/CestSamual/We-Are-Many",
-          demo: "https://cestsamual.github.io/We-Are-Many/",
-        }}
-      />
-      <Project
-        project={{
-          name: "Console Finances",
-          description: "",
-          github: "https://github.com/hamdishh/Console-Finances",
-          demo: "https://hamdishh.github.io/Console-Finances/",
-        }}
-      />
-    </div>
-
-    
+      <div className="project-container">
+        {" "}
+        {/* Parent container for projects */}
+        <Project
+          project={{
+            name: "Horiseon Refractor",
+            description: "",
+            github: "https://github.com/hamdishh/refrac-horeoson",
+            demo: "https://hamdishh.github.io/refrac-horeoson/",
+          }}
+        />
+        <Project
+          project={{
+            name: "WE-ARE-MANY", //dark blue color
+            description: "",
+            github: "https://github.com/CestSamual/We-Are-Many",
+            demo: "https://cestsamual.github.io/We-Are-Many/",
+          }}
+          className="we-are-many"
+        />
+        <Project
+          project={{
+            name: "Console Finances",
+            description: "",
+            github: "https://github.com/hamdishh/Console-Finances",
+            demo: "https://hamdishh.github.io/Console-Finances/",
+          }}
+        />
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import "./style.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import rabbitImg from "../../images/rabbit.png";
 function NavbarEl() {
   return (
     <Navbar
@@ -10,7 +10,14 @@ function NavbarEl() {
       style={{ width: "100%", position: "fixed", top: 0, zIndex: 1000 }}
     >
       <Container>
-        <Navbar.Brand href="www.google.com">Hamdi Sheikhabdullahi</Navbar.Brand>
+        <Navbar.Brand href="www.google.com">
+          Hamdi
+          <img
+            src={rabbitImg}
+            alt="Rabbit Icon"
+            style={{ marginLeft: "5px", height: "20px" }}
+          />
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
