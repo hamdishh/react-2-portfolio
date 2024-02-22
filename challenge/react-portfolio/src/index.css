@@ -55,13 +55,13 @@ button:focus-visible {
 }
 
 .newNav , .bg-green {
-  background-color: #987C8A;
+  background-color: #CE5A67;
   width: 100vw;
 
 }
 
 .navbar-brand, .nav-link {
-  color: #DFC1CF;
+  color: black;
   font-weight: 20px;
 }
 
@@ -133,6 +133,11 @@ button:focus-visible {
 .form-container {
   grid-column: span 1; /* Occupy 1 column */
 }
+
+.readme-generator .project-card {
+  background-color: #213547;
+}
+
 
 
 /* .button-container {
@@ -231,12 +236,13 @@ border-radius: 7px;
   text-align: center;
   margin-top: 41px;
   border-radius: 8px;
-  
+  background-color: #F4BF96;
 }
 
-.project-card. {
+/* .project-card. {
   background-color: #011B2B;
-}
+  background-color: #F4BF96;
+} */
 
 
 
@@ -245,11 +251,6 @@ border-radius: 7px;
   text-align: center;
   margin-top: 63px;
 }
-
-
-
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -265,12 +266,12 @@ border-radius: 7px;
 }
 
 body {
-  background-color: #E9D5CD;
-  font-family: 'Libre Caslon Display', serif;
+  background-color: #FCF5ED;
+  /* font-family: 'Libre Caslon Display', serif; */
 }
 
 
 footer.bg-green.text-light.py-3 {
-  background-color: #DFC1D0;
+  background-color: #1F1717;
   width: 100%;
 }

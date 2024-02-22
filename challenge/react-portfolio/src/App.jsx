@@ -11,7 +11,7 @@ import FooterEl from "./components/Footer";
 import Home from "./components/pages/Home";
 //import Contact from "./components/pages/ContactMe"
 import Contact from "./components/pages/ContactMe";
-
+import "./fonts/font.css"
 
 
 function App() {

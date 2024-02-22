@@ -11,9 +11,9 @@ Card.defaultProps = {
   
 }
 
-function Project({ project }) {
+function Project({ project, className }) {
   return (
-    <div className="project-container">
+    <div className="project-container ${className}`">
     <Card className= "project-card" >
 
       <CardBody >
