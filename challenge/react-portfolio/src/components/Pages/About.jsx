@@ -1,25 +1,20 @@
-// import Hero from '../components/Hero';
-// import Container from '../components/Container';
-// import Row from '../components/Row';
-// import Col from '../components/Col';
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import myImage from "../../images/IMG_1343.jpeg"
-
 
 function About() {
   return (
     <div className="about-container">
       <Container>
-        <Row>
-          <Col>
+        <Row className="justify-content-center align-items-center">
+          <Col xs={12} md={8} className="text-center">
             <h1>Welcome To My Portfolio!</h1>
           </Col>
         </Row>
-        <Row>
-          <Col xs={12} md={3}>
+        <Row className="justify-content-center align-items-center">
+          <Col xs={12} md={3} className="text-center">
             <Image src={myImage} alt="My Image" fluid />
           </Col>
-          <Col xs={12} md={9}>
+          <Col xs={12} md={7}>
             <p>
               Hello, I'm Hamdi Sheikh, and I've just spent the last 16 weeks
               exploring the land of front end web development.
@@ -30,9 +25,17 @@ function About() {
             </p>
           </Col>
         </Row>
-      </Container>
+        <Row className="justify-content-center mt-4">
+          <Col xs={12} className="text-center">
+            <Button variant="primary" className="me-3" href="https://myanimelist.net/">MyAnimeList</Button>
+            <Button variant="primary" className="me-3" href="https://www.busuu.com/">Learn Arabic on Busuu</Button>
+            <Button variant="primary" href="https://www.chloeting.com/">Chloe Ting's Free Workout</Button>
+          </Col>
+        </Row>
+    </Container>
     </div>
   );
 }
 
 export default About;
+
