@@ -57,7 +57,7 @@ const Home = () => {
         />
         <Project
           project={{
-            name: "WE-ARE-MANY", //dark blue color
+            name: "WE-ARE-MANY", 
             description: "",
             github: "https://github.com/CestSamual/We-Are-Many",
             demo: "https://cestsamual.github.io/We-Are-Many/",

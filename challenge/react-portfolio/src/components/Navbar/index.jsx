@@ -22,7 +22,7 @@ function NavbarEl() {
           <img
             src={partyImg}
             alt="Disco Icon"
-            style={{ marginLeft: "5px", height: "20px" }}
+            style={{ marginLeft: "5px", height: "34px", marginTop: "-36px" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
