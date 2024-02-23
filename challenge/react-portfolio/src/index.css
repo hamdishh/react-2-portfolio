@@ -65,6 +65,12 @@ button:focus-visible {
   font-weight: 20px;
 }
 
+.gradient-button {
+  background-image: linear-gradient(to right, #F4BF96, #CE5A67);
+  border: #1F1717;
+  color: white;
+
+}
 
 .home-container {
   flex: auto;

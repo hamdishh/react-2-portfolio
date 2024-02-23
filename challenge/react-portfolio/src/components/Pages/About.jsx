@@ -27,9 +27,9 @@ function About() {
         </Row>
         <Row className="justify-content-center mt-4">
           <Col xs={12} className="text-center">
-            <Button variant="primary" className="me-3" href="https://myanimelist.net/">MyAnimeList</Button>
-            <Button variant="primary" className="me-3" href="https://www.busuu.com/">Learn Arabic on Busuu</Button>
-            <Button variant="primary" href="https://www.chloeting.com/">Chloe Ting's Free Workout</Button>
+            <Button variant="primary" className="me-3 py-3 gradient-button" href="https://myanimelist.net/">MyAnimeList</Button>
+            <Button variant="primary" className="me-3 py-3 gradient-button" href="https://www.busuu.com/">Busuu</Button>
+            <Button variant="primary" className="py-3 gradient-button" href="https://www.chloeting.com/">Chloe Ting Shred</Button>
           </Col>
         </Row>
     </Container>
