@@ -103,7 +103,7 @@ button:focus-visible {
 }
 .contact-container {
   padding-top: 110px; 
-  border: 10px solid red;
+  /* border: 10px solid red; */
 }
 
 .form-control {
@@ -143,7 +143,8 @@ button:focus-visible {
 }
 
 .form-container {
-  grid-column: span 1; /* Occupy 1 column */
+  /* grid-column: span 1;  */
+  /* Occupy 1 column */
 }
 
 .readme-generator .project-card {
@@ -283,7 +284,7 @@ body {
 }
 
 
-footer.bg-green.text-light.py-3 {
+footer.footer.py-3 {
   background-color: #1F1717;
   width: 100%;
 }

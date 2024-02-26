@@ -1,72 +1,107 @@
-import React from "react";
-import NavbarEl from "../../components/Navbar";
-import { FloatingLabel, Form, Button } from "react-bootstrap"; // Import FloatingLabel and Form components from react-bootstrap
+import React, { useState } from "react";
+import { FloatingLabel, Form, Button } from "react-bootstrap";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({  //setting variables with useState hookk
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => { //handleChnage function handles the change in input from user
+    const { name, value } = e.target; //extract the values from targetted event
+    setFormData({
+      ...formData, //formData stores the form data (so the users, name email address and message that thye want to send)
+      [name]: value //updates the formDatas state with the new value which is name/email
+    });
+  };
+
+  const handleSubmit = (e) =>  //handles submission of form
+    e.preventDefault(); //to prevent the forms default behavior which inn this case would be to refresh the page
+
+    let formErrors = {};
+    if (!formData.name.trim()) {  //if name form is empty then message is displayed
+      formErrors.name = "Name is Required"; 
+    }
+    if (!formData.email.trim()) {
+      formErrors.email = "Email is required"; //if email form is empty then message is displayed
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      formErrors.email = "Email is invalid";
+    }
+    if (!formData.message.trim()) {
+      formErrors.message = "Message is required";
+    }
+
+    if (Object.keys(formErrors).length === 0) {
+      const emailSubject = encodeURIComponent("Message from Portfolio Contact Form");
+      const emailBody = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
+      const mailtoLink = `mailto:${formData.email}?subject=${emailSubject}&body=${emailBody}`;
+      
+      window.location.href = mailtoLink;
+    } else {
+      setErrors(formErrors);
+    }
+  };
+
   return (
-    <div className="contact-container">
+    <section className="contact-container">
       <div className="form-and-buttons">
-      <div className="form-container">
-      <FloatingLabel
-        controlId="floatingNameInput"
-        label="Your Name"
-        className="mb-3"
-      >
-        <Form.Control type="text" placeholder="Your Name" />
-      </FloatingLabel>
+        <div className="form-container">
+          <FloatingLabel
+            controlId="floatingNameInput"
+            label="Your Name"
+            className="mb-3"
+          >
+            <Form.Control
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+            />
+          </FloatingLabel>
+          {errors.name && <p className="error-message">{errors.name}</p>}
 
-      <FloatingLabel
-        controlId="floatingEmailInput"
-        label="Email address"
-        className="mb-3"
-      >
-        <Form.Control type="email" placeholder="name@example.com" />
-      </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingEmailInput"
+            label="Email address"
+            className="mb-3"
+          >
+            <Form.Control
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="your email"
+            />
+          </FloatingLabel>
+          {errors.email && <p className="error-message">{errors.email}</p>}
 
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        {/* <Form.Label></Form.Label> */}
-        <Form.Control
-          as="textarea"
-          rows={3}
-          placeholder="Leave a message here"
-        />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Control
+              as="textarea"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows={3}
+              placeholder="Leave a message here"
+            />
+          </Form.Group>
+          {errors.message && <p className="error-message">{errors.message}</p>}
+
+          <Button
+            variant="primary"
+            size="lg"
+            type="submit"
+            onClick={handleSubmit}
+          >
+            Submit
+          </Button>
+        </div>
       </div>
-
-      <div className="button-container">
-        <Button
-          variant="primary"
-          size="lg"
-          className="button-1"
-          href="https://github.com"
-        >
-          GitHub
-        </Button>
-      </div>
-
-      <div className="button-container">
-        <Button
-          variant="primary"
-          size="lg"
-          className="button-2"
-          href="/path-to-cv"
-        >
-          CV
-        </Button>
-      </div>
-
-      <div className="button-container">
-        <Button
-          variant="primary"
-          size="lg"
-          className="button-3"
-          href="https://linkedin.com"
-        >
-          LinkedIn
-        </Button>
-      </div>
-    </div>
-    </div>
+    </section>
   );
 };
 

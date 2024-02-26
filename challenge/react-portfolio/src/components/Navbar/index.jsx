@@ -17,7 +17,7 @@ function NavbarEl() {
       }}
     >
       <Container>
-        <Navbar.Brand href="www.google.com">
+        <Navbar.Brand href="">
           Hamdi
           <img
             src={partyImg}
