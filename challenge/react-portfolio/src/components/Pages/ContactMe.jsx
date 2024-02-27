@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FloatingLabel, Form, Button } from "react-bootstrap";
+import cvImg from "../../resume/1stcv.jpeg"
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -126,7 +127,7 @@ const ContactMe = () => {
           </Button>
           <Button
             variant="secondary"
-            href=""
+            href= {cvImg}
             target="_blank"
             className="col-4 mb-2"
           >
