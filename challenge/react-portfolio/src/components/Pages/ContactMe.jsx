@@ -1,29 +1,33 @@
 import React, { useState } from "react";
 import { FloatingLabel, Form, Button } from "react-bootstrap";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({  //setting variables with useState hookk
+const ContactMe = () => {
+  const [formData, setFormData] = useState({
+    //setting variables with useState hookk
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
 
-  const handleChange = (e) => { //handleChnage function handles the change in input from user
+  const handleChange = (e) => {
+    //handleChnage function handles the change in input from user
     const { name, value } = e.target; //extract the values from targetted event
     setFormData({
       ...formData, //formData stores the form data (so the users, name email address and message that thye want to send)
-      [name]: value //updates the formDatas state with the new value which is name/email
+      [name]: value, //updates the formDatas state with the new value which is name/email
     });
   };
 
-  const handleSubmit = (e) =>  //handles submission of form
+  const handleSubmit = (e) => {
+    //handles submission of form
     e.preventDefault(); //to prevent the forms default behavior which inn this case would be to refresh the page
 
     let formErrors = {};
-    if (!formData.name.trim()) {  //if name form is empty then message is displayed
-      formErrors.name = "Name is Required"; 
+    if (!formData.name.trim()) {
+      //if name form is empty then message is displayed
+      formErrors.name = "Name is Required";
     }
     if (!formData.email.trim()) {
       formErrors.email = "Email is required"; //if email form is empty then message is displayed
@@ -35,10 +39,14 @@ const Contact = () => {
     }
 
     if (Object.keys(formErrors).length === 0) {
-      const emailSubject = encodeURIComponent("Message from Portfolio Contact Form");
-      const emailBody = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
+      const emailSubject = encodeURIComponent(
+        "Message from Portfolio Contact Form"
+      );
+      const emailBody = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
+      );
       const mailtoLink = `mailto:${formData.email}?subject=${emailSubject}&body=${emailBody}`;
-      
+
       window.location.href = mailtoLink;
     } else {
       setErrors(formErrors);
@@ -96,8 +104,41 @@ const Contact = () => {
             size="lg"
             type="submit"
             onClick={handleSubmit}
+            style={{
+              backgroundImage: "linear-gradient(to right, #F4BF96, #CE5A67)",
+              border: "1px solid #1F1717",
+              color: "white",
+              fontFamily: "Arial, sans-serif",
+            }}
           >
             Submit
+          </Button>
+        </div>
+
+        <div className="button-container" style={{ marginLeft: "947px" }}>
+          <Button
+            variant="secondary"
+            href="https://github.com"
+            target="_blank"
+            className="col-4 mb-2"
+          >
+            GitHub
+          </Button>
+          <Button
+            variant="secondary"
+            href=""
+            target="_blank"
+            className="col-4 mb-2"
+          >
+            CV/Resume
+          </Button>
+          <Button
+            variant="secondary"
+            href="https://www.linkedin.com/in/hamdi-sheikhabdullahi-299ab22b6/"
+            target="_blank"
+            className="col-4 mb-2"
+          >
+            LinkedIn
           </Button>
         </div>
       </div>
@@ -105,4 +146,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactMe;

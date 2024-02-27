@@ -126,15 +126,7 @@ button:focus-visible {
   width: 22%;
 }
 
-.btn-box-con {
-  /* padding-left: 900px; */
-  display: flex;
-  flex-direction: column;
-    align-items: center;
-    padding-left: 445px;
-    margin-top: -255px;
-      
-}
+
 
 .contact-container {
   display: grid;
@@ -208,9 +200,18 @@ border-radius: 7px;
   position: relative; /* Ensure the container has a position other than static */
   top: -150px;
  margin-bottom: 10px;
+
   
   /* padding-left: 777px;
   padding-bottom: 5px; */
+}
+
+.button-container .btn {
+  background-color: #F4BF96 !important;
+  border-color: #F4BF96 !important;
+  width: 258px;
+  font-family: shine-font;
+  color: #1F1717;
 }
 
 @media (max-width: 768px) {
