@@ -1,5 +1,6 @@
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import myImage from "../../images/IMG_1343.jpeg";
+import myIcon from"../../images/fireworks.png";
 
 function About() {
   return (
@@ -7,7 +8,9 @@ function About() {
       <Container>
         <Row className="justify-content-center align-items-center">
           <Col xs={12} md={8} className="text-center">
-            <h1>Welcome To My Portfolio!</h1>
+            <h1 className="heading">
+              Welcome To My Portfolio! <img src={myIcon} alt="Icon" className="icon"/>
+            </h1>
           </Col>
         </Row>
         <Row className="justify-content-center align-items-center">

@@ -19,9 +19,9 @@ const Home = () => {
          
           project={{
             name: "README Generator", //dark blue color
-            description: "ReadMe file template generated using the command line and node.js",
-            github: "",
-            demo: "",
+            description: "",
+            github: "https://github.com/hamdishh/README-gengen",
+            demo: "https://drive.google.com/file/d/1C1lAfIv-V56d56xE1b82PijfSYw3HCmX/view?usp=drive_link",
           }}
           className="readme-generator"
         
@@ -39,7 +39,7 @@ const Home = () => {
             name: "Team Profile Generator",
             description: "",
             github: "https://github.com/hamdishh/meet-the-team",
-            demo: "",
+            demo: "https://drive.google.com/file/d/1ac0_kQ9CjoNjuFGCym6QqXxOOL6B7ixK/view?usp=drive_link",
           }}
         />
       </div>

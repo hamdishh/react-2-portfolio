@@ -81,6 +81,10 @@ button:focus-visible {
   font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
+.icon {
+  width: 47px;
+}
+
 .home-container {
   flex: auto;
   margin: 75px 75px 0 75px;
@@ -164,17 +168,6 @@ button:focus-visible {
   }
 }
 
-.button-1 {
-  width: 150px; /* Adjust button width as needed */
-  background-color: #DFC1D0; /* Set the background color */
-  border: solid#DFC1D0;
-}
-
-.button-2 {
-  width: 150px;
-  background-color: #C4A0B2;
-  border: #C4A0B2;
-}
 
 .button-3 {
   width: 150px;
@@ -253,21 +246,22 @@ border-radius: 7px;
   text-align: center;
   margin-top: 41px;
   border-radius: 8px;
-  background-color: #F4BF96;
+  background-image: linear-gradient(to right, #F4BF96, #CE5A67);
 }
-
-/* .project-card. {
-  background-color: #011B2B;
-  background-color: #F4BF96;
-} */
-
-
-
 
 .card-text {
   text-align: center;
   margin-top: 63px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.project-card img[alt="iconcard"] {
+  width: 21px; /* Adjust the width as needed */
+  height: 21px; /* Adjust the height as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+  
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -282,6 +276,11 @@ border-radius: 7px;
   }
 }
 
+.larger-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
 body {
   background-color: #FCF5ED;
   /* font-family: 'Libre Caslon Display', serif; */
@@ -292,3 +291,4 @@ footer.footer.py-3 {
   background-color: #1F1717;
   width: 100%;
 }
+
