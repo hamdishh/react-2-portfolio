@@ -17,9 +17,10 @@ Portfolio using react rendering 3 sections, a general about section displaying m
 ![alt text](<Screenshot 2024-02-28 at 22.15.45.png>)
 
 
-### 
+### License
+All work is done by me, hamdishh.
 
 
 
-### 
+
 
