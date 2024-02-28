@@ -131,7 +131,7 @@ const ContactMe = () => {
             target="_blank"
             className="col-4 mb-2"
           >
-            CV/Resume
+            resume
           </Button>
           <Button
             variant="secondary"

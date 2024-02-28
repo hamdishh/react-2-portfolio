@@ -60,12 +60,15 @@ button:focus-visible {
 
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand {
   color: black;
   font-weight: 20px;
 }
 
-
+.nav-link {
+  color: #F4BF96;
+  font-weight: 20px;
+}
 
 .gradient-button {
   background-image: linear-gradient(to right, #F4BF96, #CE5A67);
