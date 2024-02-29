@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router";
 // import Discover from './components/pages/Discover';
-import About from "./components/pages/About";
+import About from "./components/Pages/About";
 // import Search from './components/pages/Search';
 import NavbarEl from "./components/Navbar";
 // import Footer from './components/Footer';
