@@ -8,7 +8,7 @@ import NavbarEl from "./components/Navbar";
 // import Footer from './components/Footer';
 import FooterEl from "./components/Footer";
 //import Home from '.components/Home/Home
-import Home from "./components/pages/Home";
+import Home from "./components/Pages/Home";
 //import Contact from "./components/pages/ContactMe"
 import Contact from "./components/pages/ContactMe";
 import "./fonts/font.css"
