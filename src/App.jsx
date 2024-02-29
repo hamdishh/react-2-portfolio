@@ -10,7 +10,7 @@ import FooterEl from "./components/Footer";
 //import Home from '.components/Home/Home
 import Home from "./components/Pages/Home";
 //import Contact from "./components/pages/ContactMe"
-import Contact from "./components/pages/ContactMe";
+import Contact from "./components/Pages/ContactMe";
 import "./fonts/font.css"
 
 
