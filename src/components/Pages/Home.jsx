@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarEl from "../../components/Navbar";
-import Project from "../../components/Project";
+import NavbarEl from "../Navbar";
+import Project from "../Project";
 
 const Home = () => {
   return (

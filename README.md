@@ -1,26 +1,8 @@
-# Challenge 13: React Portfolio
+# React + Vite
 
-## Description
-Portfolio using react rendering 3 sections, a general about section displaying my name and interests, a home section with cards linking to the github repositories and demos of each challenge and a contact me section offering clients the option to send a message to my email and checkout my github,cv and linkedIn.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
-### Libraries/Technologies used
-- React/react router
-- React Bootstrap/Bootstrap documentation
-
-
-### Sample Images
-![alt text](<Screenshot 2024-02-28 at 22.16.21.png>)
-
-![alt text](<Screenshot 2024-02-28 at 22.21.20.png>)
-
-![alt text](<Screenshot 2024-02-28 at 22.15.45.png>)
-
-
-### Credits
-All work is done by me, hamdishh.
-
-
-
-
-
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
